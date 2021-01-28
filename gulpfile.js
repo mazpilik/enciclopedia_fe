@@ -43,7 +43,7 @@ function mover_img(){
 function mover_html(){
   return src('./index.html')
   .pipe(processhtml())
-  .pipe(dest('.dist'));
+  .pipe(dest('./dist/'));
 }
 
 exports.borrar = borrar;
