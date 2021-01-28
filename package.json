@@ -1,0 +1,27 @@
+{
+  "name": "tarea3",
+  "version": "1.0.0",
+  "description": "tarea03 para DIW",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikel Azpilicueta Lusarreta",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "delete": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-dart-scss": "^1.1.0",
+    "gulp-if": "^3.0.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-processhtml": "^1.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-ssh": "^0.7.0",
+    "path": "^0.12.7",
+    "sassdoc": "^2.7.3"
+  }
+}
