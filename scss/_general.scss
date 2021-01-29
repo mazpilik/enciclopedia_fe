@@ -2,9 +2,11 @@ body{
   @include font-family;
 }
 
-.header{
+.header, .main, .footer{
   @include centrado;
-  @include tamano-xl;
+}
+
+.header{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -31,6 +33,17 @@ body{
         color:$links-hover;
       }
     }
+  }
+  @include desktop-laptop{
+    @include tamano-xl;
+  }
+  @include tablet{
+    @include tamano-tablet;
+  }
+  @include mobile{
+    @include tamano-mobile;
+    flex-direction: column-reverse;
+    align-items: center
   }
 }
 nav{
@@ -62,10 +75,25 @@ nav{
       }
     }
   }
+  @include desktop-laptop{
+    @include tamano-xl;
+  }
+  @include tablet{
+    @include tamano-tablet;
+  }
+  @include mobile{
+    @include tamano-mobile;
+    ul{
+      li{
+        display: block;
+        margin-top: 0.5rem;
+        margin-right: 0;
+        text-align: center;
+      }
+    }
+  }
 }
-main{
-  @include centrado;
-  @include tamano-xl;
+.main{
   figure{
     margin:0;
     img{
@@ -81,12 +109,18 @@ main{
       justify-content: space-between;
       align-items: center;
       background-color: $background-block;
-      figure{
+      &__foto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-right: 1rem;
         border-radius: 50%;
-        width: 125px;
+        width: 150px;
         height: 100px;
         overflow: hidden;
+        img{
+          width: 100%;
+        }
       }
       p{
         font-size: 0.8rem;
@@ -110,6 +144,31 @@ main{
         &:last-of-type{
           font-size: 0.8rem;
           text-align: justify;
+        }
+      }
+    }
+  }
+  @include desktop-laptop{
+    @include tamano-xl;
+  }
+  @include tablet{
+    @include tamano-tablet;
+    article{
+      .author-bio{
+        &__foto{
+          width:225px;
+        }
+      }
+    }
+  }
+  @include mobile{
+    @include tamano-mobile;
+    article{
+      .author-bio{
+        flex-direction: column;
+        &__foto{
+          width:100px;
+          height: 100px;
         }
       }
     }
@@ -163,5 +222,20 @@ main{
   }
   &__notice{
     font-size: 0.8rem;
+  }
+  @include desktop-laptop{
+    @include tamano-xl;
+  }
+  @include tablet{
+    @include tamano-tablet;
+  }
+  @include mobile{
+    width: 100%;
+    padding: 1rem 0;
+    &__legal{
+      ul{
+        li{margin-right: 0.5rem;}
+      }
+    }
   }
 }

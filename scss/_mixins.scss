@@ -6,7 +6,35 @@
   width: 50%;
 }
 
+@mixin tamano-tablet {
+  width: 75%;
+}
+
+@mixin tamano-mobile{
+  width: 90%;
+}
+
 
 @mixin font-family {
   font-family: 'Roboto', sans-serif;
+}
+
+@mixin desktop-laptop{
+  @media(min-width: $tablet-width){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media(max-width: $tablet-width){
+    
+    @content;
+  }
+}
+
+@mixin mobile{
+  @media(max-width: $mobile-width){
+    
+    @content;
+  }
 }
