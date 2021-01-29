@@ -1,0 +1,50 @@
+header{
+  @include centrado;
+  @include tamano-xl;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  .logotipo{}
+  .header__title{
+    h1{
+      margin:0px;
+    }
+  }
+}
+nav{
+  @include centrado;
+  width: 30%;
+  ul{
+    list-style: none;
+    padding: 0;
+    li{
+      display: inline;
+      a{
+
+      }
+    }
+  }
+}
+main{
+  @include centrado;
+  @include tamano-xl;
+  figure{
+    margin:0;
+    img{
+      width: 100%;
+    }
+  }
+}
+footer{
+  @include centrado;
+  @include tamano-xl;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  ul{
+    list-style: none;
+    li{
+      display: inline;
+    }
+  }
+}
