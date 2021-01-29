@@ -1,7 +1,7 @@
 {
-  "name": "tarea3",
+  "name": "tarea4",
   "version": "1.0.0",
-  "description": "tarea03 para DIW",
+  "description": "tarea04 para DIW",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
