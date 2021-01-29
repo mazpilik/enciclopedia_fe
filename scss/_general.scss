@@ -1,26 +1,64 @@
-header{
+body{
+  @include font-family;
+}
+
+.header{
   @include centrado;
   @include tamano-xl;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  .logotipo{}
-  .header__title{
+  align-items: flex-start;
+  margin-top: 2rem;
+  .logotipo{
+    width: 75px;
+  }
+  &__title{
     h1{
       margin:0px;
+      font-size: 1.25rem;
+    }
+  }
+  &__lenguageMenu{
+    a{
+      font-weight: bold;
+      font-size: 0.8rem;
+      text-decoration: none;
+      color:$links-color;
+      &.active{
+        text-decoration: underline;
+      }
+      &:hover{
+        color:$links-hover;
+      }
     }
   }
 }
 nav{
   @include centrado;
-  width: 30%;
+  @include tamano-xl;
+  display:flex;
+  justify-content: center;
   ul{
+    display: inline-block;
     list-style: none;
     padding: 0;
     li{
       display: inline;
+      margin-right: 1rem;
+      &:last-of-type{
+        margin-right: 0;
+      }
       a{
-
+        font-weight: bold;
+        font-size: 1.25rem;
+        text-decoration: none;
+        color:$links-color;
+        &.active{
+          text-decoration: underline;
+        }
+        &:hover{
+          color:$links-hover;
+        }
       }
     }
   }
@@ -34,17 +72,96 @@ main{
       width: 100%;
     }
   }
+  article{
+    @include centrado;
+    width: 90%;
+    .author-bio{
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $background-block;
+      figure{
+        margin-right: 1rem;
+        border-radius: 50%;
+        width: 125px;
+        height: 100px;
+        overflow: hidden;
+      }
+      p{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+      }
+    }
+    .module-blunder{
+      p{
+        &:first-of-type{
+          border-top: 1px solid red;
+          border-bottom: 1px solid red;
+          margin-top: 0;
+          padding:0.5rem;
+          text-align: justify;
+        }
+        &:nth-of-type(2){
+          margin:0;
+          font-size: 0.6rem;
+          text-align: center;
+        }
+        &:last-of-type{
+          font-size: 0.8rem;
+          text-align: justify;
+        }
+      }
+    }
+  }
 }
-footer{
+.footer{
   @include centrado;
   @include tamano-xl;
+  padding:1rem;
   background-color: #000;
-  color: #fff;
   text-align: center;
+  color: #fff;
+  .logotipo{
+    width: 75px;
+  }
+  &__adress{
+    font-size: 0.8rem;
+    p{
+      margin:0.6rem;
+    }
+  }
   ul{
     list-style: none;
     li{
       display: inline;
     }
+  }
+  &__social-networks{
+    ul{
+      li{
+        margin-right: 1rem;
+        a{
+          color:$base-negative;
+        }
+      }
+    }
+  }
+  &__legal{
+    ul{
+      li{
+        margin-right: 1rem;;
+        &:last-of-type{
+          margin-right: 0;
+        }
+        a{
+          text-decoration: none;
+          color:$base-negative;
+        }
+      }
+    }
+  }
+  &__notice{
+    font-size: 0.8rem;
   }
 }
