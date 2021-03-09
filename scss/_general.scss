@@ -252,6 +252,9 @@ nav{
   }
   &__notice{
     font-size: 0.8rem;
+    a{
+      color:white;
+    }
   }
   @include desktop-laptop{
     @include tamano-xl;
