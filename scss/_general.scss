@@ -212,6 +212,7 @@ nav{
   color: #fff;
   .logotipo{
     width: 75px;
+    filter: invert(1);
   }
   &__adress{
     font-size: 0.8rem;
