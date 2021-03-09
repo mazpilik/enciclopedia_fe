@@ -41,7 +41,7 @@ function mover_img(){
 }
 
 function mover_html(){
-  return src('./index.html')
+  return src('./*.html')
   .pipe(processhtml())
   .pipe(dest('./dist/'));
 }
