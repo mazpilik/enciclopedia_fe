@@ -173,6 +173,28 @@ nav{
       }
     }
   }
+  &.frontend-langs{
+    margin-bottom: 4rem;
+    .feimages{
+      display: flex;
+      figure{
+        margin-right: 1rem;
+        width: 150px;
+        figcaption{
+          font-size: 0.8rem;
+          text-align: center
+        }
+      }
+      @include mobile{
+        flex-direction: column;
+        figure{
+          margin-right: 0;
+          margin-bottom: 1rem;
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 .footer{
   @include centrado;
