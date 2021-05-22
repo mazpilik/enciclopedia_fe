@@ -236,6 +236,9 @@ nav{
             }
             input[type='text']{
               height: 3rem;
+              &:focus{
+                border-color: blue !important;
+              }
             }
             label{
               margin-bottom: 1rem;
@@ -251,12 +254,21 @@ nav{
             }
             textarea{
               width: 100%;
+              &:focus{
+                border-color: blue !important;
+              }
             }
             select{
               width:fit-content;
               height: 3rem;
+              &:focus{
+                border-color: blue !important;
+              }
               &.multipleSelect{
                 height: 150px;
+                &:focus{
+                  border-color: blue !important;
+                }
               }
             }
           }
