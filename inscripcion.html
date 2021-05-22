@@ -39,7 +39,7 @@
     <div class="container">
       <div class="jornadasHeader">
         <h1>Inscripción a las X Jornadas Matemáticas</h1>
-      <p>Los campos señalados con * són obligatorios</p>
+      <p class="required">Los campos señalados con * són obligatorios</p>
       </div>
       <form action="">
 
@@ -47,21 +47,21 @@
           <legend>Datos personales</legend>
           <div class="form__row form__row_twoColumns">
             <div class="form__item">
-              <label for="username">Nombre *</label>
+              <label for="username">Nombre <span class="required">*</span></label>
               <input type="text" name="username" id="username" accesskey="n" required/>
             </div>
             <div class="form__item">
-              <label for="surnames">Apellidos *</label>
+              <label for="surnames">Apellidos <span class="required">*</span></label>
               <input id="surname" accesskey="a" type="text" name="surname" required />
             </div>
           </div>
           <div class="form__row form__row_twoColumns">
             <div class="form__item">
-              <label for="email">Correo electrónico *</label>
+              <label for="email">Correo electrónico <span class="required">*</span></label>
               <input id="email" accesskey="c" type="text" name="email" required />
             </div>
             <div class="form__item">
-              <label for="phone">Teléfono *</label>
+              <label for="phone">Teléfono <span class="required">*</span></label>
               <input id="phone" accesskey="t" type="text" name="phone" required />
             </div>
           </div>
@@ -76,7 +76,7 @@
           <legend>Perfil de participante</legend>
           <div class="form__row">
             <div class="form__item">
-              <label for="registration-note">¿Por qué está interesado en participar? *</label>
+              <label for="registration-note">¿Por qué está interesado en participar? <span class="required">*</span></label>
               <textarea required id="registrationnote" accesskey="i" name="registration-note" rows="10"></textarea>
             </div>
           </div>
@@ -94,7 +94,7 @@
           </div>
           <div class="form__row">
             <div class="form__item form__item_withNote">
-              <label for="interest">¿En qué talleres está interesado? *</label>
+              <label for="interest">¿En qué talleres está interesado? <span class="required">*</span></label>
               <p>Para seleccionar más de una opción, mantened pulsada la tecla Control(Windows) / Command(Mac) mientras hacéis clic a las opciones</p>
               <select required id="workshops" accesskey="w" class="multipleSelect" name="workshops" multiple>
                 <option value="">Selecciona uno o más</option>
@@ -110,7 +110,7 @@
           </div>
           <div class="form__row form__row_column">
             <div class="form__item">
-              <label for="attendance">Seleccione una de las tres opciones siguientes: *</label>
+              <label for="attendance">Seleccione una de las tres opciones siguientes: <span class="required">*</span></label>
             </div>
             <div class="form__item_radio">
               <input required id="bothdays" accesskey="b" name="attendance" type="radio" value="both-days" />
@@ -130,7 +130,7 @@
           <div class="form__row">
             <div class="form__item">
               <input required id="legalnotie" accesskey="l" type="checkbox" name="legal-notice" value="accept" />
-              <label for="legal-notice">He leído y acepto la política de privacidad y el aviso legal *</label>
+              <label for="legal-notice">He leído y acepto la política de privacidad y el aviso legal <span class="required">*</span></label>
             </div>
           </div>
           <div class="form__row">
