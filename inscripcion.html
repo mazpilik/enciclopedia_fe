@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea04 - DIW</title>
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="dist/css/styles.min.css" />
+  <!--/build-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/1d0992a2ae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <img class="logotipo" src="img/enciclopedia-front-end.svg" alt="Enciclopedia Front-End logo" />
+    <div class="header__title">
+      <h1>Enciclopedia Front-End</h1>
+    </div>
+    <div class="header__lenguageMenu">
+      <a class="active" href="#">ES</a> / <a href="#">EN</a>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a  href="index.html">Module-Bundlers</a></li>
+      <li><a href="lenguajes-front-end.html">Lenguajes Front-End</a></li>
+      <li><a class="active" href="inscripcion.html">X Jornadas Matemáticas</a></li>
+    </ul>
+  </nav>
+  <main class="main jornadas_matematicas">
+    <div class="container">
+      <div class="jornadasHeader">
+        <h1>Inscripción a las X Jornadas Matemáticas</h1>
+      <p>Los campos señalados con * són obligatorios</p>
+      </div>
+      <form action="">
+
+        <fieldset>
+          <legend>Datos personales</legend>
+          <div class="form__row form__row_twoColumns">
+            <div class="form__item">
+              <label for="username">Nombre *</label>
+              <input type="text" name="username" />
+            </div>
+            <div class="form__item">
+              <label for="surnames">Apellidos *</label>
+              <input type="text" name="surname" />
+            </div>
+          </div>
+          <div class="form__row form__row_twoColumns">
+            <div class="form__item">
+              <label for="email">Correo electrónico *</label>
+              <input type="text" name="email" />
+            </div>
+            <div class="form__item">
+              <label for="phone">Teléfono *</label>
+              <input type="text" name="phone" />
+            </div>
+          </div>
+          <div class="form__row form__row_twoColumns">
+            <div class="form__item">
+              <label for="user-picture">Fotografía para la acreditación</label>
+              <input type="file" />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Perfil de participante</legend>
+          <div class="form__row">
+            <div class="form__item">
+              <label for="registration-note">¿Por qué está interesado en participar? *</label>
+              <textarea name="registration-note" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__item">
+              <label for="profesional-activity">Actividad profesional</label>
+              <select name="profefional-activity" >
+                <option value="">Seleccione una actividad</option>
+                <option value="estudiante-bachillerato">Estudiante de bachillerato</option>
+                <option value="estudiante-universitario">Estudiante universitario</option>
+                <option value="profesor-universitario">Profesor universitario</option>
+                <option value="otra">Otra actividad profesional</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__item form__item_withNote">
+              <label for="interest">¿En qué talleres está interesado? *</label>
+              <p>Para seleccionar más de una opción, mantened pulsada la tecla Control(Windows) / Command(Mac) mientras hacéis clic a las opciones</p>
+              <select class="multipleSelect" name="workshops" multiple>
+                <option value="">Selecciona uno o más</option>
+                <option value="">La encriptación a lo largo de la historia</option>
+                <option value="">Seguridad informática</option>
+                <option value="">Redes sociales y teoría de grafos</option>
+                <option value="">Matemáticas y azar</option>
+                <option value="">Problemas matemáticos del milenio</option>
+                <option value="">La predicción del tiempo</option>
+                <option value="">Fractales en el aula</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__row form__row_column">
+            <div class="form__item">
+              <label for="attendance">Seleccione una de las tres opciones siguientes: *</label>
+            </div>
+            <div class="form__item_radio">
+              <input name="attendance" type="radio" value="both-days" />
+              <label for="both-days">Asistiré los días 4 y 5 de mayo</label>
+            </div>
+            <div class="form__item_radio">
+              <input name="attendance" type="radio" value="first-day" />
+              <label for="first-day">Asistiré solo el día 4 de mayo</label>
+            </div>
+            <div class="form__item_radio">
+              <input name="attendance" type="radio" value="second-day" />
+              <label for="second-day">Asistiré solo el día 5 de mayo</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form__footer">
+          <div class="form__row">
+            <div class="form__item">
+              <input type="checkbox" name="legal-notice" value="accept" />
+              <label for="legal-notice">He leído y acepto la política de privacidad y el aviso legal *</label>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__item">
+              <input type="submit" value="enviar" />
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <img class="logotipo" src="img/enciclopedia-front-end.svg" alt="Enciclopedia Front-End logo">
+    <h3>Enciclopedia de Front-End</h3>
+    <div class="footer__adress">
+      <p>Calle Cantones 5. 31243 Estella</p>
+      <p>Tel. 948 22 65 36</p>
+      <p>info@enciclopediafrontend.org</p>
+    </div>
+    <div class="footer__social-networks">
+      <ul>
+        <li><a href="" title="twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="" title="instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="" title="youtube"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer__legal">
+      <ul>
+        <li><a href="">Quíenes somos</a></li>
+        <li><a href="">Política de privacidad</a></li>
+        <li><a href="">Aviso legal</a></li>
+        <li><a href="">Cookies</a></li>
+      </ul>
+    </div>
+    <div class="footer__notice">
+      <p>Actividad realizada por Mikel Azpilicueta Lusarreta para la asignatura Diseño de Interfaces WEB. Curso 2020-2021</p>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -202,6 +202,107 @@ nav{
       }
     }
   }
+  &.jornadas_matematicas{
+    .jornadasHeader{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 4rem;
+      h1{
+        font-size: 2.25rem;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+    }
+    form{
+      margin-bottom: 4rem;
+      fieldset{
+        padding: 2.5rem 2rem;
+        margin-bottom: 2rem;
+        legend{
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        .form__row{
+          width: 100%;
+          display: flex;
+          margin-bottom: 1rem;
+          .form__item{
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+            input{
+              width: 100%;
+            }
+            input[type='text']{
+              height: 3rem;
+            }
+            label{
+              margin-bottom: 1rem;
+              font-weight: bold;
+            }
+            &.form__item_withNote{
+              label{
+                margin-bottom: 0;
+              }
+              p{
+                font-size: 0.8rem;
+              }
+            }
+            textarea{
+              width: 100%;
+            }
+            select{
+              width:fit-content;
+              height: 3rem;
+              &.multipleSelect{
+                height: 150px;
+              }
+            }
+          }
+          &.form__row_twoColumns{
+            flex-direction: row;
+            justify-content: space-between;
+            @include mobile{
+              flex-direction: column;
+            }
+            .form__item{
+              display: flex;
+              flex-direction: column;
+              width: 47%;
+              @include mobile{
+                width: 100%;;
+                margin-bottom: 1rem;
+              }
+            }
+          }
+          &.form__row_column{
+            display: flex;
+            flex-direction: column;
+            .form__item_radio{
+              margin-bottom: 1rem;
+            }
+          }
+        }
+
+      }
+      .form__footer{
+        .form__row{
+          margin-bottom: 1rem;
+        }
+        input[type='submit']{
+          background-color:#ffe600;
+          border:none;
+          border-radius: 5px;
+          padding:1rem 2rem;
+          font-size:1rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+    } 
+  }
 }
 .footer{
   @include centrado;
