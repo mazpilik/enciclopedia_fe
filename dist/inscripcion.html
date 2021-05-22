@@ -34,7 +34,7 @@
         <h1>Inscripción a las X Jornadas Matemáticas</h1>
       <p class="required">Los campos señalados con * són obligatorios</p>
       </div>
-      <form action="" autocomplete="off">
+      <form autocomplete="off">
 
         <fieldset>
           <legend>Datos personales</legend>
@@ -44,7 +44,7 @@
               <input type="text" name="username" id="username" accesskey="n" required/>
             </div>
             <div class="form__item">
-              <label for="surnames">Apellidos <span class="required">*</span></label>
+              <label for="surname">Apellidos <span class="required">*</span></label>
               <input id="surname" accesskey="a" type="text" name="surname" required />
             </div>
           </div>
@@ -60,8 +60,8 @@
           </div>
           <div class="form__row form__row_twoColumns">
             <div class="form__item">
-              <label for="user-picture">Fotografía para la acreditación</label>
-              <input type="file" />
+              <label for="userpicture">Fotografía para la acreditación</label>
+              <input name="userpicture" type="file" />
             </div>
           </div>
         </fieldset>
@@ -69,14 +69,14 @@
           <legend>Perfil de participante</legend>
           <div class="form__row">
             <div class="form__item">
-              <label for="registration-note">¿Por qué está interesado en participar? <span class="required">*</span></label>
+              <label for="registrationnote">¿Por qué está interesado en participar? <span class="required">*</span></label>
               <textarea required id="registrationnote" accesskey="i" name="registration-note" rows="10"></textarea>
             </div>
           </div>
           <div class="form__row">
             <div class="form__item">
-              <label for="profesional-activity">Actividad profesional</label>
-              <select id="pactivity" name="profefional-activity" >
+              <label for="profesionalactivity">Actividad profesional</label>
+              <select id="profefionalactivity" name="profefionalactivity" >
                 <option value="">Seleccione una actividad</option>
                 <option value="estudiante-bachillerato">Estudiante de bachillerato</option>
                 <option value="estudiante-universitario">Estudiante universitario</option>
@@ -87,7 +87,7 @@
           </div>
           <div class="form__row">
             <div class="form__item form__item_withNote">
-              <label for="interest">¿En qué talleres está interesado? <span class="required">*</span></label>
+              <label for="workshops">¿En qué talleres está interesado? <span class="required">*</span></label>
               <p>Para seleccionar más de una opción, mantened pulsada la tecla Control(Windows) / Command(Mac) mientras hacéis clic a las opciones</p>
               <select required id="workshops" accesskey="w" class="multipleSelect" name="workshops" multiple>
                 <option value="">Selecciona uno o más</option>
@@ -103,27 +103,27 @@
           </div>
           <div class="form__row form__row_column">
             <div class="form__item">
-              <label for="attendance">Seleccione una de las tres opciones siguientes: <span class="required">*</span></label>
+              <label>Seleccione una de las tres opciones siguientes: <span class="required">*</span></label>
             </div>
             <div class="form__item_radio">
               <input required id="bothdays" accesskey="b" name="attendance" type="radio" value="both-days" />
-              <label for="both-days">Asistiré los días 4 y 5 de mayo</label>
+              <label for="bothdays">Asistiré los días 4 y 5 de mayo</label>
             </div>
             <div class="form__item_radio">
               <input id="firstday" accesskey="1" name="attendance" type="radio" value="first-day" />
-              <label for="first-day">Asistiré solo el día 4 de mayo</label>
+              <label for="firstday">Asistiré solo el día 4 de mayo</label>
             </div>
             <div class="form__item_radio">
               <input id="secondday" accesskey="2" name="attendance" type="radio" value="second-day" />
-              <label for="second-day">Asistiré solo el día 5 de mayo</label>
+              <label for="secondday">Asistiré solo el día 5 de mayo</label>
             </div>
           </div>
         </fieldset>
         <div class="form__footer">
           <div class="form__row">
             <div class="form__item">
-              <input required id="legalnotie" accesskey="l" type="checkbox" name="legal-notice" value="accept" />
-              <label for="legal-notice">He leído y acepto la política de privacidad y el aviso legal <span class="required">*</span></label>
+              <input required id="legalnotie" accesskey="l" type="checkbox" name="legalnotice" value="accept" />
+              <label for="legalnotice">He leído y acepto la política de privacidad y el aviso legal <span class="required">*</span></label>
             </div>
           </div>
           <div class="form__row">
