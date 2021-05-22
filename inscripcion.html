@@ -43,21 +43,21 @@
           <div class="form__row form__row_twoColumns">
             <div class="form__item">
               <label for="username">Nombre *</label>
-              <input type="text" name="username" />
+              <input type="text" name="username" id="username" accesskey="n"/>
             </div>
             <div class="form__item">
               <label for="surnames">Apellidos *</label>
-              <input type="text" name="surname" />
+              <input id="surname" accesskey="a" type="text" name="surname" />
             </div>
           </div>
           <div class="form__row form__row_twoColumns">
             <div class="form__item">
               <label for="email">Correo electrónico *</label>
-              <input type="text" name="email" />
+              <input id="email" accesskey="c" type="text" name="email" />
             </div>
             <div class="form__item">
               <label for="phone">Teléfono *</label>
-              <input type="text" name="phone" />
+              <input id="phone" accesskey="t" type="text" name="phone" />
             </div>
           </div>
           <div class="form__row form__row_twoColumns">
@@ -72,13 +72,13 @@
           <div class="form__row">
             <div class="form__item">
               <label for="registration-note">¿Por qué está interesado en participar? *</label>
-              <textarea name="registration-note" rows="10"></textarea>
+              <textarea id="registrationnote" accesskey="i" name="registration-note" rows="10"></textarea>
             </div>
           </div>
           <div class="form__row">
             <div class="form__item">
               <label for="profesional-activity">Actividad profesional</label>
-              <select name="profefional-activity" >
+              <select id="pactivity" name="profefional-activity" >
                 <option value="">Seleccione una actividad</option>
                 <option value="estudiante-bachillerato">Estudiante de bachillerato</option>
                 <option value="estudiante-universitario">Estudiante universitario</option>
@@ -91,7 +91,7 @@
             <div class="form__item form__item_withNote">
               <label for="interest">¿En qué talleres está interesado? *</label>
               <p>Para seleccionar más de una opción, mantened pulsada la tecla Control(Windows) / Command(Mac) mientras hacéis clic a las opciones</p>
-              <select class="multipleSelect" name="workshops" multiple>
+              <select id="workshops" accesskey="w" class="multipleSelect" name="workshops" multiple>
                 <option value="">Selecciona uno o más</option>
                 <option value="">La encriptación a lo largo de la historia</option>
                 <option value="">Seguridad informática</option>
@@ -108,15 +108,15 @@
               <label for="attendance">Seleccione una de las tres opciones siguientes: *</label>
             </div>
             <div class="form__item_radio">
-              <input name="attendance" type="radio" value="both-days" />
+              <input id="bothdays" accesskey="b" name="attendance" type="radio" value="both-days" />
               <label for="both-days">Asistiré los días 4 y 5 de mayo</label>
             </div>
             <div class="form__item_radio">
-              <input name="attendance" type="radio" value="first-day" />
+              <input id="firstday" accesskey="1" name="attendance" type="radio" value="first-day" />
               <label for="first-day">Asistiré solo el día 4 de mayo</label>
             </div>
             <div class="form__item_radio">
-              <input name="attendance" type="radio" value="second-day" />
+              <input id="secondday" accesskey="2" name="attendance" type="radio" value="second-day" />
               <label for="second-day">Asistiré solo el día 5 de mayo</label>
             </div>
           </div>
@@ -124,13 +124,13 @@
         <div class="form__footer">
           <div class="form__row">
             <div class="form__item">
-              <input type="checkbox" name="legal-notice" value="accept" />
+              <input id="legalnotie" accesskey="l" type="checkbox" name="legal-notice" value="accept" />
               <label for="legal-notice">He leído y acepto la política de privacidad y el aviso legal *</label>
             </div>
           </div>
           <div class="form__row">
             <div class="form__item">
-              <input type="submit" value="enviar" />
+              <input id="sendform" accesskey="s" type="submit" value="enviar" />
             </div>
           </div>
         </div>
